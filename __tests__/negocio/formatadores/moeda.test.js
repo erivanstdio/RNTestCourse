@@ -10,7 +10,6 @@ describe('negocio/formatadores/moeda', () => {
       const result = formataBrasileiroParaDecimal('8,59');
 
       expect(result).toBe(8.59)
-      console.log(result);
     });
   });
 
@@ -21,7 +20,6 @@ describe('negocio/formatadores/moeda', () => {
       const result = formataDecimalParaReal(8.59)
 
       expect(result).toMatch(/R\$\s8,59/)
-      console.log(result)
     })
   });
 });

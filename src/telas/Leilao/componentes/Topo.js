@@ -4,10 +4,10 @@ import { Text, View, StyleSheet } from 'react-native';
 import Icone from '../../../componentes/Icone';
 
 import { formataDecimalParaReal } from '../../../negocio/formatadores/moeda';
-import { formataMaiorLanceDoLeilao } from '../../../negocio/formatadores/lance';
+import { formatBiggestAuctionBid } from '../../../negocio/formatadores/lance';
 
 export default function Topo({ nome, descricao, lances, valorInicial, cor, icone }) {
-  const maiorLance = formataMaiorLanceDoLeilao(lances, valorInicial);
+  const maiorLance = formatBiggestAuctionBid(lances, valorInicial);
 
   return <>
     <Icone cor={cor} nome={icone} style={estilos.topo} />
