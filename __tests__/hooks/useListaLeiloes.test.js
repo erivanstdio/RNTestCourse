@@ -35,22 +35,13 @@ describe('hooks/useListaLeiloes', () => {
 
       expect(result.current[0]).toEqual([]);
 
-
-
-      console.log('antes: ', result.current[0])
       await waitForNextUpdate();
-      console.log('depois: ', result.current[0])
-      expect(result.current[0]).toEqual(mockAuctions);
-      
 
+      expect(result.current[0]).toEqual(mockAuctions);
       obtemLeiloes.mockImplementation(() => mockAuctionsUpdated)
 
       await act(() => result.current[1]())
-      
-      console.log('pós hook: ', result.current[0])
-
+     
       expect(result.current[0]).toEqual(mockAuctionsUpdated);
-
-
     });
 });
