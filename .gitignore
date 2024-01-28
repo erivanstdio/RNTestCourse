@@ -1,4 +1,5 @@
-coverage
+coverage/coverage.data
+/coverage/
 assets/
 node_modules
 .expo
