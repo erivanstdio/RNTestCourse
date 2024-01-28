@@ -10,7 +10,7 @@
     "eject": "expo eject",
     "api": "json-server --host 192.168.0.5 --watch db.json",
     "test": "jest --watch --coverage=false",
-    "testCoverage": "jest"
+    "testFinal": "jest"
   },
   "dependencies": {
     "@react-navigation/native": "^6.0.8",
