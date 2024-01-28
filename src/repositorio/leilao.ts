@@ -3,7 +3,6 @@ import apiLeiloes from '../servicos/apiLeiloes';
 export async function obtemLeiloes() {
   try {
 
-    console.log('chama')
     const resposta = await apiLeiloes.get(`/leiloes`);
 
     return resposta.data;
